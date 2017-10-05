@@ -1,37 +1,3 @@
-## Welcome to GitHub Pages
+## Bienvenido a la Red Lationoamericana del tizón tardío
 
-You can use the [editor on GitHub](https://github.com/tizonlatino/tizonlatino.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/tizonlatino/tizonlatino.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+El objetivo principal de la red es compartir conocimientos y protocolos sobre el patógeno causante de la enfermedad y la enfermedad misma con el fin último de avanzar en un control sostenible del problema biótico. Además, colaborar estrechamente con las redes existentes en Europa y Norteamérica, USAblight y Euroblight.
