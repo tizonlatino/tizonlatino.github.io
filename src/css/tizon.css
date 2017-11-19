@@ -1,0 +1,312 @@
+/* DECLARING THE PALETTE COLORS IN THE WEBSITE
+-------------------------------------------------- */
+:root {
+  /*Main palette*/
+    --blight-black: #3E3C3E;
+    --microscopy-gray: #838183;
+    --cream-smoke: #E1DDD5;
+    --dark-olive-green: #7D8A55;
+    --lesion-brown: #625947;
+
+  /*Supplementary colors*/
+    --white: #FFFFFF;
+    --deep-black: #000000;
+    --salmon: #FF7979;
+  }
+
+/* STYLING THE MAIN FEATURES OF THE BODY
+-------------------------------------------------- */
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    background-color: var(--white);
+  }
+
+.container-fluid {
+    padding: 50px 50px 0px 0px;
+  }
+
+.main-content {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.main-content.left-aligned-content {
+  padding-left: 130px;
+  padding-right: 30px;
+}
+
+.bg-cream {
+    background-color: var(--cream-smoke);
+  }
+  
+p {
+  	color: var(--microscopy-gray);
+  }
+
+h1 {
+    font: 400 50px Lato, sans-serif;
+  	color: var(--white);
+  }
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--lesion-brown);
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+h4 {
+    font-size: 18px;
+    line-height: 1.375em;
+    color: var(--blight-black);
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+
+.btn-outline-secondary {
+    color: var(--lesion-brown);
+    border-color: var(--lesion-brown);
+
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--lesion-brown) !important;
+}
+
+::selection {
+    color: var(--salmon);
+}
+
+/* CAROUSEL CUSTOMIZATION
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+  background-color: var(--white);
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+.main-text
+{
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    width: 100%;
+    color: var(--white);
+}
+
+.page_title {
+    font: 400 90px Montserrat, sans-serif;
+    text-shadow: 2px 2px 2px var(--blight-black);
+}
+
+.subtitle {
+    color: var(--blight-black);
+    text-shadow: 1px 1px 1.5px var(--deep-black);
+  }
+
+.carousel-item {
+  opacity: 0.5;
+}
+
+/* ABOUT US CUSTOMIZATION
+-------------------------------------------------- */
+#about {
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.about-tizon-text {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+img.about-blight-pic {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* NETWORKS CUSTOMIZATION
+-------------------------------------------------- */
+.network-logo {
+  -webkit-filter: blight-black(1);
+}
+
+/* JUMBOTRON CUSTOMIZATION
+-------------------------------------------------- */
+.jumbotron {
+    background-color: var(--dark-olive-green);
+    color: var(--white);
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+
+
+.logo-small {
+    color: var(--dark-olive-green);
+    font-size: 50px;
+  }
+
+.logo {
+    color: var(--dark-olive-green);
+    font-size: 200px;
+  }
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+
+.item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+
+.item span {
+    font-style: normal;
+  }
+
+.panel {
+    border: 0.7px solid var(--dark-olive-green);
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .3);
+  }
+  .panel-footer .btn:hover {
+      border: 0.7px solid var(--dark-olive-green);
+      background-color: var(--white) !important;
+      color: var(--dark-olive-green);
+  }
+  .panel-heading {
+      color: var(--white) !important;
+      background-color: var(--dark-olive-green) !important;
+      padding: 25px;
+      border-bottom: 0.7px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: var(--white) !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: var(--microscopy-gray);
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: var(--dark-olive-green);
+      color: var(--white);
+  }
+
+/* NAVIGATION BAR CUSTOMIZATION
+-------------------------------------------------- */
+.navbar {
+    margin-bottom: 0;
+    background-color: var(--blight-black);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+.navbar li a, .navbar .navbar-brand {
+    color: var(--white) !important;
+  }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: var(--dark-olive-green) !important;
+    background-color: var(--white) !important;
+  }
+  
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: var(--white) !important;
+  }
+
+
+
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: var(--dark-olive-green);
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
