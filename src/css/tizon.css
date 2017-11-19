@@ -23,11 +23,6 @@ body {
     background-color: var(--white);
   }
 
-.main-content.left-aligned-content {
-  padding-left: 130px;
-  padding-right: 30px;
-}
-
 .bg-cream {
     background-color: var(--cream-smoke);
   }
@@ -59,6 +54,8 @@ h4 {
     text-align: justify;
   }
 
+
+
 .btn-outline-secondary {
     color: var(--lesion-brown);
     border-color: var(--lesion-brown);
@@ -72,6 +69,34 @@ h4 {
 ::selection {
     color: var(--salmon);
 }
+
+/* NAVIGATION BAR CUSTOMIZATION
+-------------------------------------------------- */
+.navbar {
+    margin-bottom: 0;
+    background-color: var(--blight-black);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+.navbar li a, .navbar .navbar-brand {
+    color: var(--white) !important;
+  }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: var(--dark-olive-green) !important;
+    background-color: var(--white) !important;
+  }
+  
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: var(--white) !important;
+  }
 
 /* CAROUSEL CUSTOMIZATION
 -------------------------------------------------- */
@@ -120,6 +145,16 @@ h4 {
 
 /* ABOUT US CUSTOMIZATION
 -------------------------------------------------- */
+.main-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main-content.left-aligned-content {
+  padding-left: 130px;
+  padding-right: 30px;
+}
+
 #about {
   padding-top: 0px;
   padding-bottom: 40px;
@@ -137,8 +172,9 @@ img {
 
 /* NETWORKS CUSTOMIZATION
 -------------------------------------------------- */
-.network-logo {
-  -webkit-filter: blight-black(1);
+.col-sm-6 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* JUMBOTRON CUSTOMIZATION
@@ -150,125 +186,29 @@ img {
     font-family: Montserrat, sans-serif;
   }
 
-
-.logo-small {
-    color: var(--dark-olive-green);
-    font-size: 50px;
-  }
-
-.logo {
-    color: var(--dark-olive-green);
-    font-size: 200px;
-  }
-
-.thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-
-.thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-
-.item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-
-.item span {
-    font-style: normal;
-  }
-
-.panel {
-    border: 0.7px solid var(--dark-olive-green);
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-
-  .panel:hover {
-      box-shadow: 5px 0px 40px rgba(0,0,0, .3);
-  }
-  .panel-footer .btn:hover {
-      border: 0.7px solid var(--dark-olive-green);
-      background-color: var(--white) !important;
-      color: var(--dark-olive-green);
-  }
-  .panel-heading {
-      color: var(--white) !important;
-      background-color: var(--dark-olive-green) !important;
-      padding: 25px;
-      border-bottom: 0.7px solid transparent;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-      background-color: var(--white) !important;
-  }
-  .panel-footer h3 {
-      font-size: 32px;
-  }
-  .panel-footer h4 {
-      color: var(--microscopy-gray);
-      font-size: 14px;
-  }
-  .panel-footer .btn {
-      margin: 15px 0;
-      background-color: var(--dark-olive-green);
-      color: var(--white);
-  }
-
-/* NAVIGATION BAR CUSTOMIZATION
+/* FOOTER CUSTOMIZATION
 -------------------------------------------------- */
-.navbar {
-    margin-bottom: 0;
-    background-color: var(--blight-black);
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 1px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
+footer {
+  font: 400 12px Lato, sans-serif;
+}
 
-.navbar li a, .navbar .navbar-brand {
-    color: var(--white) !important;
-  }
-
-.navbar-nav li a:hover, .navbar-nav li.active a {
-    color: var(--dark-olive-green) !important;
-    background-color: var(--white) !important;
-  }
-  
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: var(--white) !important;
-  }
+p#last-content {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+}
 
 
+.slideanim {visibility:hidden;}
 
-  footer .glyphicon {
-      font-size: 20px;
-      margin-bottom: 20px;
-      color: var(--dark-olive-green);
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
+.slide {
       animation-name: slide;
       -webkit-animation-name: slide;
       animation-duration: 1s;
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
-  @keyframes slide {
+
+@keyframes slide {
     0% {
       opacity: 0;
       transform: translateY(50%);
@@ -278,7 +218,8 @@ img {
       transform: translateY(0%);
     }
   }
-  @-webkit-keyframes slide {
+
+@-webkit-keyframes slide {
     0% {
       opacity: 0;
       -webkit-transform: translateY(50%);
@@ -288,7 +229,8 @@ img {
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -298,7 +240,8 @@ img {
         margin-bottom: 35px;
     }
   }
-  @media screen and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;
     }
