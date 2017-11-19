@@ -23,15 +23,6 @@ body {
     background-color: var(--white);
   }
 
-.container-fluid {
-    padding: 50px 50px 0px 0px;
-  }
-
-.main-content {
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
 .main-content.left-aligned-content {
   padding-left: 130px;
   padding-right: 30px;
@@ -56,6 +47,7 @@ h2 {
     color: var(--lesion-brown);
     font-weight: 600;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
 h4 {
