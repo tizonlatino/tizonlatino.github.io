@@ -204,6 +204,10 @@ img {
   color: var(--lesion-brown);
 }
 
+.news-caption {
+    color: var(--blight-black);
+}
+
 /* FOOTER CUSTOMIZATION
 -------------------------------------------------- */
 footer {
@@ -211,8 +215,8 @@ footer {
 }
 
 p#last-content {
-  margin-top: 1rem;
-  margin-bottom: 0rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 
