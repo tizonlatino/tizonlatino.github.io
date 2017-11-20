@@ -16,7 +16,6 @@
 
 /* STYLING THE MAIN FEATURES OF THE BODY
 -------------------------------------------------- */
-
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -53,8 +52,6 @@ h4 {
     margin-bottom: 5px;
     text-align: justify;
   }
-
-
 
 .btn-outline-secondary {
     color: var(--lesion-brown);
@@ -100,7 +97,6 @@ h4 {
 
 /* CAROUSEL CUSTOMIZATION
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 3rem;
@@ -269,9 +265,8 @@ p#last-content {
       visibility: visible;
   }
 
-/* MOBILE SCREEN CUSTOMIZATION
+/* SLIDING MOTION CUSTOMIZATION
 -------------------------------------------------- */
-
 @keyframes slide {
     0% {
       opacity: 0;
@@ -294,6 +289,8 @@ p#last-content {
     }
 }
 
+/* MOBILE SCREEN CUSTOMIZATION
+-------------------------------------------------- */
 @media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;

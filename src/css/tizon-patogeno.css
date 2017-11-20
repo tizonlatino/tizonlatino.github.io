@@ -16,7 +16,6 @@
 
 /* STYLING THE MAIN FEATURES OF THE BODY
 -------------------------------------------------- */
-
 body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -45,7 +44,7 @@ h2 {
     font-weight: 600;
     margin-bottom: 30px;
     margin-top: 30px;
-  }
+ }
 
 h4 {
     font-size: 18px;
@@ -54,9 +53,11 @@ h4 {
     font-weight: 400;
     margin-bottom: 5px;
     text-align: justify;
-  }
+ }
 
-
+h6 {
+  font-size: 13px;
+ }
 
 .btn-outline-secondary {
     color: var(--lesion-brown);
@@ -102,7 +103,6 @@ h4 {
 
 /* CAROUSEL CUSTOMIZATION
 -------------------------------------------------- */
-
 /* Carousel base class */
 .carousel {
   margin-bottom: 3rem;
@@ -145,7 +145,7 @@ h4 {
   opacity: 0.5;
 }
 
-/* ABOUT US CUSTOMIZATION
+/* ABOUT PHYTOPHTHORA CUSTOMIZATION
 -------------------------------------------------- */
 .main-content {
   padding-left: 0px;
@@ -156,6 +156,13 @@ h4 {
   padding-left: 50px;
   padding-right: 30px;
   text-align: justify;
+}
+
+.main-content.right-aligned-content {
+  padding-left: 50px;
+  padding-right: 100px;
+  text-align: right;
+  color: var(--microscopy-gray);
 }
 
 #about {
@@ -173,82 +180,12 @@ img {
   max-height: 100%;
 }
 
-/* NETWORKS CUSTOMIZATION
--------------------------------------------------- */
-.col-sm-6 {
-  padding-left: 0px;
-  padding-right: 0px;
+.text-body {
+  padding-left: 200px;
+  padding-right: 200px;
+  text-align: justify;
 }
 
-/* NEWS CAROUSEL CUSTOMIZATION
--------------------------------------------------- */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  height: 100px;
-  width: 100px;
-  background-size: 100%, 100%;
-  border-radius: 50%;
-  background-image: none;
-}
-
-.carousel-control-next-icon:after {
-  content: '>';
-  font-size: 55px;
-  color: var(--lesion-brown);
-}
-
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 55px;
-  color: var(--lesion-brown);
-}
-
-.carousel-indicators {
-  color: var(--lesion-brown);
-}
-
-.news-caption {
-    color: var(--blight-black);
-    opacity: 1;
-}
-
-.news-content {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.carousel-item.news-carousel-item {
-      height: 35rem;
-      background-color: var(--white);
-}
-
-.carousel-item.news-carousel-item > img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 35rem;
-      max-width: none;
-}
-
-.carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 10px;
-    text-indent: 0;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    background-color: var(--lesion-brown);
-   
-}
-.carousel-indicators .active {
-    width: 10px;
-    height: 10px;
-    margin: 10px;
-    background-color: var(--microscopy-gray);
-}
 
 /* FOOTER CUSTOMIZATION
 -------------------------------------------------- */
@@ -272,9 +209,8 @@ p#last-content {
       visibility: visible;
   }
 
-/* MOBILE SCREEN CUSTOMIZATION
+/* SLIDING MOTION CUSTOMIZATION
 -------------------------------------------------- */
-
 @keyframes slide {
     0% {
       opacity: 0;
@@ -297,6 +233,8 @@ p#last-content {
     }
 }
 
+/* MOBILE SCREEN CUSTOMIZATION
+-------------------------------------------------- */
 @media screen and (max-width: 768px) {
     .col-sm-4 {
       text-align: center;
@@ -320,6 +258,7 @@ p#last-content {
       height: 40rem;
       max-width: none;
     }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -340,6 +279,12 @@ p#last-content {
       height: 50rem;
       max-width: none;
     }
+
+    .text-body {
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: justify;
+    }
 }
 
 @media screen and (max-width: 320px) {
@@ -348,7 +293,7 @@ p#last-content {
     }
 
     .carousel-item {
-      height: 50rem;
+      height: 60rem;
       background-color: var(--white);
     }
 
@@ -357,7 +302,13 @@ p#last-content {
       top: 0;
       left: 0;
       min-width: 100%;
-      height: 50rem;
+      height: 60rem;
       max-width: none;
+    }
+
+    .text-body {
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: justify;
     }
 }
