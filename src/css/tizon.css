@@ -151,7 +151,7 @@ h4 {
 }
 
 .main-content.left-aligned-content {
-  padding-left: 130px;
+  padding-left: 50px;
   padding-right: 30px;
 }
 
@@ -177,14 +177,28 @@ img {
   padding-right: 0px;
 }
 
-/* JUMBOTRON CUSTOMIZATION
+/* NEWS CAROUSEL CUSTOMIZATION
 -------------------------------------------------- */
-.jumbotron {
-    background-color: var(--dark-olive-green);
-    color: var(--white);
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: var(--lesion-brown);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: var(--lesion-brown);
+}
 
 /* FOOTER CUSTOMIZATION
 -------------------------------------------------- */
