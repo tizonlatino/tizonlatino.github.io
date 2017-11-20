@@ -139,7 +139,7 @@ h4 {
     text-shadow: 1px 1px 1.5px var(--deep-black);
   }
 
-.carousel-item {
+.transparency {
   opacity: 0.5;
 }
 
@@ -206,6 +206,11 @@ img {
 
 .news-caption {
     color: var(--blight-black);
+    opacity: 1;
+}
+
+.carousel-caption {;
+  opacity: 1;
 }
 
 /* FOOTER CUSTOMIZATION
