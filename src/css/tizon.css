@@ -200,6 +200,10 @@ img {
   color: var(--lesion-brown);
 }
 
+.carousel-indicators {
+  color: var(--lesion-brown);
+}
+
 /* FOOTER CUSTOMIZATION
 -------------------------------------------------- */
 footer {
