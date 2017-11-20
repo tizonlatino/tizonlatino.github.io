@@ -1,286 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <!-- Theme Made By www.w3schools.com - No Copyright -->
-  <title>Tizón Latino</title>
+  <title>Noticias y eventos | Tizón Latino</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="src/css/bootstrap4/bootstrap.min.css">
+  <script src="../src/js/jquery-3.2.1.min.js"></script>
+  <script src="../src/js/popper.min.js"></script>  
+  <link rel="stylesheet" href="../src/css/bootstrap4/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="src/js/jquery-3.2.1.min.js"></script>
-  <script src="src/js/boostrap4/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="src/css/tizon.css">
-
+  <script src="../src/js/bootstrap4/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../src/css/tizon-noticias.css">
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-expand-sm fixed-top">
- <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">Logo</a>
-  
-  <!-- Links -->
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 1</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link 3</a>
-    </li>
-  </ul>
+<body id="tizonPage">
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   <a class="navbar-brand" href="..">Tizón Latino</a>
+	 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+	   <span class="navbar-toggler-icon"></span>
+	   </button>
+
+	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+		<ul class="navbar-nav ml-auto">
+	    	<li class="nav-item">
+	     	  <a class="nav-link" href="p-infestans"><i>Phytophthora infestans</i></a>
+	     	</li>
+	     	<li class="nav-item">
+	     	  <a class="nav-link" href="quienes-somos">¿Quiénes somos?</a>
+	     	</li>
+	     	<li class="nav-item">
+	     	  <a class="nav-link" href="eventos-noticias">Noticias y eventos de la red</a>
+	     	</li>
+	     	<li class="nav-item">
+	     	  <a class="nav-link" href="recursos">Recursos de investigación</a>
+	     	</li>
+	     </ul>
+	</div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Tizón Latino</h1> 
-  <p class="subtitle">Red latinoamericana de colaboración de <i>Phytophthora infestans</i></p> 
+
+<!-- Tizón Latino Welcome Carousel -->
+<div id="tizonCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item transparency active">
+      <img class="first-slide" src="../src/img/pathogen/IMG_5218.JPG" alt="First slide">
+    </div>
+    <div class="carousel-item transparency">
+      <img class="second-slide" src="../src/img/pathogen/fry_blight.png" alt="Second slide">
+    </div>
+    <div class="carousel-item transparency">
+      <img class="third-slide" src="../src/img/pathogen/P8084_9_2.jpg" alt="Third slide">
+    </div>
+  </div>
+  <div class="main-text hidden-xs">
+      <div class="col-sm-12 text-xs-center">
+          <h1 class="page_title">Tizón Latino</h1>
+          <h3 class="subtitle">Red latinoamericana de cooperación para el estudio del tizón tardío de las solanáceas</h3>
+      </div>
+  </div>
 </div>
 
-<!-- Container (About Section) -->
+<!-- About Tizón Latino -->
 <div id="about" class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+    <div class="col-sm-8 main-content left-aligned-content">
+      <h2 class="about-tizon-text">¿Qué es Tizón Latino?</h2><br>
+      <h4>La red de cooperación Tizón Latino se constituyó en el año 2014 en el marco del XXVI Congreso de la Asociación Latinoamericana de la Papa en Bogotá, Colombia. Nuestro objetivo principal es lograr un control sostenible del tizón tardío de las solanáceas mediante el intercambio de información y recursos de investigación sobre <i>Phytophthora infestans</i>, el patógeno causante de la enfermedad, y sus manifestaciones patológicas en las plantas.</h4><br>
+      <h4>Asimismo, se busca expandir de manera coordinada la colaboración con <a href="https://usablight.org/">USAblight</a> y <a href="http://euroblight.net/">Euroblight</a>, las redes de tizón tardío en Norteamérica y Europa.</h4><br>
+      <a href="quienes-somos" class="btn btn-outline-secondary btn-lg">Leer más</a>
     </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
+    <div class="col-sm-4 main-content my-auto">
+      <img class="about-blight-pic" src ="../src/img/pathogen/about.jpg">
     </div>
   </div>
 </div>
 
-<div class="container-fluid bg-grey">
+<!-- Allied networks -->
+<div class="container-fluid bg-cream">
+ <div class="row">
+ 	<div class="col-sm-12 main-content text-center">
+	  <h2>Redes aliadas</h2><br>
+ 	</div>
+ </div>
   <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    <div class="col-sm-6 my-auto mx-auto">
+      <a href="http://euroblight.net/">
+      <img class="mx-auto d-block network-logo" src="../src/img/EuroBlight.png">
+      </a><br>
     </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
+    <div class="col-sm-6 my-auto mx-auto">
+      <a href="https://usablight.org/">
+	  <img class="mx-auto d-block network-logo" src="../src/img/USAblight.png">
+	  </a><br>
     </div>
   </div>
 </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
-      </div>
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
+ <!-- Footer information --> 
 <footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Webmaster: <a href="http://ayala-usma.github.io/VisualAnalytics">David A. Ayala-Usma</a> at Universidad de los Andes, Colombia</p>
+  <p id="last-content">Diseño y contenidos: Natalia Guayazán Palacios y <a href="http://ayala-usma.github.io/VisualAnalytics">David A. Ayala-Usma</a> at Universidad de los Andes, Colombia</p>
 </footer>
-
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
-
+<script src="../src/js/scroll_main.js"></script>
 </body>
 </html>

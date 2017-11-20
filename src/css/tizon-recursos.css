@@ -1,0 +1,360 @@
+/* DECLARING THE PALETTE COLORS IN THE WEBSITE
+-------------------------------------------------- */
+:root {
+  /*Main palette*/
+    --blight-black: #3E3C3E;
+    --microscopy-gray: #838183;
+    --cream-smoke: #E1DDD5;
+    --dark-olive-green: #7D8A55;
+    --lesion-brown: #625947;
+
+  /*Supplementary colors*/
+    --white: #FFFFFF;
+    --deep-black: #000000;
+    --salmon: #FF7979;
+  }
+
+/* STYLING THE MAIN FEATURES OF THE BODY
+-------------------------------------------------- */
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    background-color: var(--white);
+  }
+
+.bg-cream {
+    background-color: var(--cream-smoke);
+  }
+  
+p {
+  	color: var(--microscopy-gray);
+  }
+
+h1 {
+    font: 400 50px Lato, sans-serif;
+  	color: var(--white);
+  }
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--lesion-brown);
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+h4 {
+    font-size: 18px;
+    line-height: 1.375em;
+    color: var(--blight-black);
+    font-weight: 400;
+    margin-bottom: 5px;
+    text-align: justify;
+  }
+
+
+
+.btn-outline-secondary {
+    color: var(--lesion-brown);
+    border-color: var(--lesion-brown);
+
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--lesion-brown) !important;
+}
+
+::selection {
+    color: var(--salmon);
+}
+
+/* NAVIGATION BAR CUSTOMIZATION
+-------------------------------------------------- */
+.navbar {
+    margin-bottom: 0;
+    background-color: var(--blight-black);
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 1px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+
+.navbar li a, .navbar .navbar-brand {
+    color: var(--white) !important;
+  }
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: var(--dark-olive-green) !important;
+    background-color: var(--white) !important;
+  }
+  
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: var(--white) !important;
+  }
+
+/* CAROUSEL CUSTOMIZATION
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 3rem;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 30rem;
+  background-color: var(--white);
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 30rem;
+  max-width: none;
+}
+
+.main-text
+{
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    width: 100%;
+    color: var(--white);
+}
+
+.page_title {
+    font: 400 90px Montserrat, sans-serif;
+    text-shadow: 2px 2px 2px var(--blight-black);
+}
+
+.subtitle {
+    color: var(--blight-black);
+    text-shadow: 1px 1px 1.5px var(--deep-black);
+  }
+
+.transparency {
+  opacity: 0.5;
+}
+
+/* ABOUT US CUSTOMIZATION
+-------------------------------------------------- */
+.main-content {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.main-content.left-aligned-content {
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+#about {
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.about-tizon-text {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* NETWORKS CUSTOMIZATION
+-------------------------------------------------- */
+.col-sm-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* NEWS CAROUSEL CUSTOMIZATION
+-------------------------------------------------- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 55px;
+  color: var(--lesion-brown);
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color: var(--lesion-brown);
+}
+
+.carousel-indicators {
+  color: var(--lesion-brown);
+}
+
+.news-caption {
+    color: var(--blight-black);
+    opacity: 1;
+}
+
+.news-content {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.carousel-item.news-carousel-item {
+      height: 35rem;
+      background-color: var(--white);
+}
+
+.carousel-item.news-carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 35rem;
+      max-width: none;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--lesion-brown);
+   
+}
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: var(--microscopy-gray);
+}
+
+/* FOOTER CUSTOMIZATION
+-------------------------------------------------- */
+footer {
+  font: 400 12px Lato, sans-serif;
+}
+
+p#last-content {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.slideanim {visibility:hidden;}
+
+.slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+
+/* MOBILE SCREEN CUSTOMIZATION
+-------------------------------------------------- */
+
+@keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+@-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .carousel-item.news-carousel-item {
+      height: 55rem;
+      background-color: var(--white);
+    }
+
+    .carousel-item.news-carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 55rem;
+      max-width: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+
+    .carousel-item.news-carousel-item {
+      height: 65rem;
+      background-color: var(--white);
+    }
+
+    .carousel-item.news-carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 65rem;
+      max-width: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .logo {
+        font-size: 150px;
+    }
+
+    .carousel-item.news-carousel-item {
+      height: 65rem;
+      background-color: var(--white);
+    }
+
+    .carousel-item.news-carousel-item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      height: 65rem;
+      max-width: none;
+    }
+}
