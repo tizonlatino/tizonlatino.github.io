@@ -247,9 +247,12 @@ img {
     background-color: var(--microscopy-gray);
 }
 
+/* CARD CUSTOMIZATION
+------------------------------------------------- */
+
 .card-img-top {
     width: 100%;
-    height: 15vw;
+    height: 12rem;
     object-fit: cover;
 }
 
